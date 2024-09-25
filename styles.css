@@ -2,14 +2,31 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
 }
 
 header {
-    background-color: #333;
+    background-color: #4CAF50;
     color: white;
-    padding: 10px 0;
+    padding: 20px;
     text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
 }
 
 main {
@@ -21,14 +38,13 @@ h2 {
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: disc;
+    margin-left: 20px;
 }
 
 li {
-    background-color: #ddd;
-    margin: 10px 0;
-    padding: 10px;
+    margin-bottom: 10px;
+    color: #555;
 }
 
 form {
@@ -40,18 +56,50 @@ form label {
     margin: 5px 0;
 }
 
-form input {
+form input[type="text"],
+form input[type="email"] {
     padding: 10px;
     margin-bottom: 10px;
     width: 100%;
 }
 
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
 footer {
     text-align: center;
-    background-color: #333;
+    background-color: #4CAF50;
     color: white;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 10px;
+    position: relative; /* Changed from fixed to relative */
+}
+
+footer .socials {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+footer .socials li {
+    margin: 0 10px;
+}
+
+footer .socials li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .socials li a:hover {
+    text-decoration: underline;
 }
